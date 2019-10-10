@@ -47,12 +47,12 @@ a {
   width: calc(100% - 200px);
   height: calc(100vh - 100px);
   float: left;
-  background: green; /*DEBUG*/
+  background-image: linear-gradient(to bottom right, #2f575c, #070c0c );
 }
 
 #player {
   height: 100px;
-  background: red; /*DEBUG*/
+  background: #282828;
 }
 
 /* menu */
