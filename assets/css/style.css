@@ -9,3 +9,29 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
 }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* struttura 3 blocchi */
+#menu {
+  width: 200px;
+  height: calc(100vh - 100px);
+  float: left;
+  background: black; /*DEBUG*/
+}
+
+#main {
+  width: calc(100% - 200px);
+  height: calc(100vh - 100px);
+  float: left;
+  background: green; /*DEBUG*/
+}
+
+#player {
+  height: 100px;
+  background: red; /*DEBUG*/
+}
