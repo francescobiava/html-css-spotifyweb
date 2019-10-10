@@ -177,3 +177,24 @@ a {
     justify-content: center;
   }
 }
+
+/* main */
+#main .nav-menu {
+  margin: 30px 10%;
+}
+
+#main .nav-menu ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#main .nav-menu a {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  color: #fff;
+  padding: 10px;
+}
