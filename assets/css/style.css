@@ -6,8 +6,16 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .clearfix:after {
@@ -16,12 +24,23 @@ body {
   clear: both;
 }
 
+.half-opacity {
+  opacity: 0.5;
+}
+
+.half-opacity:hover {
+  opacity: 1;
+}
+
 /* struttura 3 blocchi */
 #menu {
   width: 200px;
   height: calc(100vh - 100px);
   float: left;
-  background: black; /*DEBUG*/
+  background: #070d0e;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #main {
@@ -34,4 +53,67 @@ body {
 #player {
   height: 100px;
   background: red; /*DEBUG*/
+}
+
+/* menu */
+#menu a {
+  display: block;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #fff;
+}
+
+#menu .top {
+  padding-top: 25px;
+}
+
+#menu .top img {
+  filter: invert(1);
+}
+
+#menu .logo {
+  margin-bottom: 25px;
+  padding-left: 20px;
+}
+
+#menu .logo img {
+  height: 40px;
+}
+
+#menu .top ul img {
+  height: 25px;
+  margin-right: 10px;
+}
+
+#menu .top ul a {
+padding: 10px 0 10px 20px;
+}
+
+#menu .bottom {
+  padding: 0 0 10px 20px;
+}
+
+#menu .bottom img {
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#menu .bottom .download i {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+#menu .bottom .download {
+  padding-bottom: 10px;
+}
+
+#menu .bottom .user {
+  padding-top: 10px;
+  margin-right: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#menu .actual-page {
+  border-left: 4px solid #1ed761;
 }
