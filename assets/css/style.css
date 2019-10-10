@@ -180,7 +180,7 @@ a {
 
 /* main */
 #main .nav-menu {
-  margin: 30px 10%;
+  margin: 30px 10% 50px;
 }
 
 #main .nav-menu ul {
@@ -197,4 +197,94 @@ a {
   font-weight: 600;
   color: #fff;
   padding: 10px;
+}
+
+#main section {
+  margin: 25px;
+}
+
+#main .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main .title h2 {
+  font-size: 2.2em;
+  font-weight: 800;
+  color: #fff;
+}
+
+#main .title p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: #fff;
+  opacity: 0.5;
+}
+
+#main .title a {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: #fff;
+}
+
+#main .content {
+  margin: 25px 0;
+  text-align: center;
+}
+
+#main .content ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#main .content li {
+  margin: 0 15px 20px 0;
+  position: relative;
+}
+
+#main .content img {
+  display: block;
+  width: 180px;
+  margin-bottom: 10px;
+}
+
+#main .content a {
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
+#main .layer {
+  width: 180px;
+  height: 180px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  visibility: hidden;
+}
+
+#main .layer .fa-play {
+  margin: auto;
+  font-size: 2.5em;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  padding: 15px 25px;
+  opacity: 0.6;
+}
+
+#main .layer .fa-play:hover {
+  opacity: 1;
+}
+
+#main .content li:hover .layer {
+  visibility: visible;
 }
