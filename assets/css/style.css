@@ -404,7 +404,7 @@ a {
   opacity: 0.8;
 }
 
-#player .time li:not(.line){
+#player .time li:not(.line) {
   font-size: 0.7em;
   color: #fff;
   opacity: 0.6;
@@ -416,4 +416,39 @@ a {
 
 #player .audio {
   width: 30%;
+}
+
+#player .audio ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#player .audio li {
+  margin-right: 20px;
+}
+
+#player .audio a {
+  color: #fff;
+}
+
+#player .volume {
+  width: 80px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  position: relative;
+}
+
+#player .volume span {
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 5px;
+  opacity: 0.8;
+}
+
+#player .volume:hover span {
+  background-color: #1ed761;
 }
