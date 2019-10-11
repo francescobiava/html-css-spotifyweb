@@ -35,7 +35,7 @@ a {
 /* struttura 3 blocchi */
 #menu {
   width: 200px;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 90px);
   float: left;
   background: #070d0e;
   display: flex;
@@ -45,7 +45,7 @@ a {
 
 #main {
   width: calc(100% - 200px);
-  height: calc(100vh - 100px);
+  height: calc(100vh - 90px);
   float: left;
   background-image: linear-gradient(to bottom right, #2f575c, #070c0c );
   overflow-y: scroll;
@@ -53,7 +53,7 @@ a {
 }
 
 #player {
-  height: 100px;
+  height: 90px;
   background: #282828;
 }
 
@@ -299,4 +299,58 @@ a {
 
 #main #recently-played .layer {
   border-radius: 50%;
+}
+
+/* player */
+#player {
+  display: flex;
+  justify-content: space-between;
+}
+
+#player .now-playing {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+#player .now-playing .album-cover{
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+#player .now-playing .album-cover img {
+  width: 100%;
+  box-shadow: 0 0 5px #000;
+}
+
+#player .now-playing li {
+  margin-left: 10px;
+}
+
+#player .now-playing .song-title {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
+#player .now-playing .song-title:hover {
+  text-decoration: underline;
+}
+
+#player .now-playing .artist {
+  display: inline-block;
+  font-size: 0.7em;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
+#player .now-playing .fa-heart {
+  font-size: 1em;
+  margin-left: 15px;
+  color: #fff;
 }
