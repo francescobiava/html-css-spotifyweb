@@ -92,6 +92,33 @@ a {
   padding: 10px 0 10px 20px;
 }
 
+#menu .playlist {
+  margin: 15px 0;
+  overflow-y: scroll;
+  scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
+}
+
+#menu .playlist h4 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  margin-left: 20px;
+  color: #fff;
+  opacity: 0.5;
+}
+
+#menu .playlist a {
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  margin: 15px 0 15px 20px;
+}
+
+#menu .playlist .hide {
+  font-size: 1.5em;
+  display: none;
+}
+
 #menu .bottom {
   padding-bottom: 10px;
 }
@@ -141,15 +168,15 @@ a {
     width: calc(100% - 70px);
   }
 
-  #menu span {
+  #menu .big-logo,
+  #menu span,
+  #menu .playlist h4,
+  #menu .playlist a {
     display: none;
   }
 
-  #menu .big-logo {
-    display: none;
-  }
-
-  #menu .small-logo {
+  #menu .small-logo,
+  #menu .playlist .hide {
     display: inline-block;
   }
 
@@ -159,7 +186,8 @@ a {
   #menu .bottom .download,
   #menu .bottom .download i,
   #menu .bottom .user,
-  #menu .bottom img {
+  #menu .bottom img,
+  #menu .playlist .hide {
     padding-left: 0;
     padding-right: 0;
     margin-left: 0;
