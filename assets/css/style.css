@@ -385,7 +385,7 @@ a {
   text-decoration: underline;
 }
 
-#player .now-playing li{
+#player .now-playing li:not(:first-child) {
   display: inline-block;
 }
 
