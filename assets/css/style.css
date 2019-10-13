@@ -252,8 +252,8 @@ a {
   flex-wrap: wrap;
 }
 
-#main .title .left a {
-  font-size: 2.2em;
+#main .title .left h2 a {
+  font-size: 1.6em;
   font-weight: 800;
   color: #fff;
 }
@@ -442,11 +442,12 @@ a {
 
 #player .line span {
   position: absolute;
-  width: 25%;
+  width: 0%;
   height: 4px;
   background-color: #fff;
   border-radius: 5px;
   opacity: 0.8;
+  animation: playing linear 234s;
 }
 
 #player .time li:not(.line) {
@@ -569,4 +570,10 @@ a {
   #player .audio li:not(:nth-child(3)) {
     display: none;
   }
+}
+
+/* animation */
+@keyframes playing {
+  0% {width: 0%;}
+  100% {width: 100%;}
 }
