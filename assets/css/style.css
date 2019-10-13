@@ -227,6 +227,18 @@ a {
   font-weight: 600;
   color: #fff;
   padding: 10px;
+  position: relative;
+}
+
+#main .nav-menu .selected::after{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #1ed761;
+  margin-top: 3px;
+  position: absolute;
+  left: calc(50% - 15px);
 }
 
 #main section {
