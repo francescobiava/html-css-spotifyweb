@@ -442,13 +442,15 @@ a {
 }
 
 #player .line span {
-  position: absolute;
   width: 0%;
   height: 4px;
   background-color: #fff;
   border-radius: 5px;
   opacity: 0.8;
   animation: playing linear 234s;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 #player .time li:not(.line) {
@@ -459,6 +461,14 @@ a {
 
 #player .line:hover span {
   background-color: #1ed761;
+}
+
+#player .line:hover span::after{
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
 }
 
 #player .audio {
@@ -488,16 +498,26 @@ a {
 }
 
 #player .volume span {
-  position: absolute;
   width: 60px;
   height: 4px;
   background-color: #fff;
   border-radius: 5px;
   opacity: 0.8;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 #player .volume:hover span {
   background-color: #1ed761;
+}
+
+#player .volume:hover span::after{
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
 }
 
 /* media query player */
